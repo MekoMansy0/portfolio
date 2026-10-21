@@ -77,20 +77,22 @@
   .proj-head .cat{font-family:'IBM Plex Mono',monospace;font-size:.7rem;color:var(--ink-soft);letter-spacing:1px;text-align:right;}
   .proj-body{display:grid;grid-template-columns:1.1fr 1fr;align-items:stretch;}
   .proj-body.solo{grid-template-columns:1fr;}
-  .proj-info{padding:26px 24px;display:flex;flex-direction:column;}
+  .proj-info{padding:28px 24px;display:flex;flex-direction:column;justify-content:center;}
   .proj-info h3{font-size:1.45rem;letter-spacing:-.5px;margin-bottom:6px;}
   .proj-info .where{font-family:'IBM Plex Mono',monospace;font-size:.74rem;color:var(--ink-soft);margin-bottom:14px;}
   .proj-info p{color:var(--ink-soft);font-size:.95rem;margin-bottom:16px;}
   .spec{border-top:1px solid var(--line);margin-top:20px;display:grid;grid-template-columns:1fr 1fr;row-gap:0;}
-  .spec .c{padding:12px 14px 12px 0;border-right:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .spec .c{padding:12px 16px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);}
   .spec .c:nth-last-child(-n+2){border-bottom:none;}
-  .spec .c:nth-child(2n){border-right:none;padding-left:14px;}
+  .spec .c:nth-child(2n+1){padding-left:0;}
+  .spec .c:nth-child(2n){border-right:none;}
   .spec .k{font-family:'IBM Plex Mono',monospace;font-size:.64rem;letter-spacing:1px;color:var(--ink-soft);}
   .spec .v{font-size:.84rem;font-weight:600;margin-top:2px;}
   .dl{margin-top:16px;}
   .dl a{font-family:'IBM Plex Mono',monospace;font-size:.78rem;color:var(--paper);background:var(--ink);text-decoration:none;padding:9px 14px;display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--ink);transition:.15s;}
   .dl a:hover{background:var(--signal);border-color:var(--signal);transform:translate(-2px,-2px);box-shadow:3px 3px 0 var(--accent);}
-  .proj-vis{border-left:1px solid var(--line);background:repeating-linear-gradient(45deg,var(--paper-2),var(--paper-2) 10px,var(--card) 10px,var(--card) 20px);display:flex;flex-direction:column;gap:10px;padding:16px;align-self:stretch;}
+  .proj-vis{border-left:1px solid var(--line);background:repeating-linear-gradient(45deg,var(--paper-2),var(--paper-2) 10px,var(--card) 10px,var(--card) 20px);display:flex;flex-direction:column;justify-content:center;gap:12px;padding:18px;align-self:stretch;}
+  .proj-vis img{max-height:230px;object-fit:contain;}
   .proj-vis img{width:100%;border:1px solid var(--ink);cursor:zoom-in;transition:transform .2s;background:#fff;display:block;}
   .proj-vis img:hover{transform:scale(1.015);}
 
